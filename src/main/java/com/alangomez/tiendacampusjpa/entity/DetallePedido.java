@@ -21,11 +21,9 @@ public class DetallePedido {
     private Integer cantidad;
 
     public DetallePedido(){
-
     }
 
-    public DetallePedido(Long id, Pedido pedido, Producto producto, Integer cantidad) {
-        this.id = id;
+    public DetallePedido(Pedido pedido, Producto producto, Integer cantidad) {
         this.pedido = pedido;
         this.producto = producto;
         this.cantidad = cantidad;

@@ -19,6 +19,9 @@ public class EstadoPedido {
     @OneToMany(mappedBy = "estadoPedido", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Pedido> pedidos = new ArrayList<>();
 
+    public EstadoPedido(){
+    }
+
     public EstadoPedido(int id, String estado) {
         this.id = id;
         this.estado = estado;

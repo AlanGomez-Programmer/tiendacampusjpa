@@ -32,8 +32,7 @@ public class Pedido {
 
     }
 
-    public Pedido(Long id, Cliente cliente, EstadoPedido estadoPedido, LocalDateTime fecha, List<DetallePedido> detalles) {
-        this.id = id;
+    public Pedido(Cliente cliente, EstadoPedido estadoPedido, LocalDateTime fecha) {
         this.cliente = cliente;
         this.estadoPedido = estadoPedido;
         this.fecha = fecha;
